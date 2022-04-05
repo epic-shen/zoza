@@ -41,7 +41,7 @@ bot.run()
 При нажатии на кнопку «Старт»:
 ```js
 bot.start((ctx) => {
-	var zz = new zoza(cxt)
+  var zz = new zoza(cxt)
   zz.send(`Привет, ${name}`)
 })
 ```
@@ -52,7 +52,7 @@ bot.start((ctx) => {
 ```js
 bot.command('!профиль', (ctx) => {
   var zz = new zoza(cxt)
-	zz.send(ctx, `
+  zz.send(ctx, `
 ID: ${zz.user_id}
 Имя: ${zz.user_name}
 Фамилия: ${zz.user_surnamr}
@@ -68,7 +68,7 @@ ID: ${zz.user_id}
 ```js
 bot.event('photo', (ctx) => {
   var zz = new zoza(cxt)
-	zz.send('Красивая фотография!')
+  zz.send('Красивая фотография!')
 })
 ```
 
@@ -78,7 +78,7 @@ bot.event('photo', (ctx) => {
 ```js
 bot.event('gif', (ctx) => {
   var zz = new zoza(cxt)
-	zz.send('Крутая GIF-ка!')
+  zz.send('Крутая GIF-ка!')
 })
 ```
 
